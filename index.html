@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <script
+      src="https://kit.fontawesome.com/0f386651af.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>blog post</title>
+  </head>
+  <body>
+    <nav class="nav section">
+      <div class="nav-container container">
+        <img src="images/logo.png" alt="" style="width: 20%;">
+        <i class="fa-sharp fa-solid fa-moon darkmode-btn"></i>
+        <i class="fa-sharp fa-solid fa-moon redmode-btn"></i>
+        <div class="toggle-btn">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <ul class="nav-links">
+          <i class="fa-solid fa-xmark close-btn"></i>
+          <li class="nav-link">
+            <a href="home.html">Home</a>
+          </li>
+          <li class="nav-link">
+            <a href="#tasks">All Tasks</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section class="home-page section" id="home">
+      <div class="home-page-container container">
+        <h1>
+          What would you like to<br />
+          abt this boy?
+        </h1>
+        <img class="imgs" src="images/IMG_20220904_141640_995 (3).jpg" alt="Avatar" style="width:200px"><hr>
+
+        <ul class="form-container">
+          <li class="input-container">
+            <input
+              type="text"
+              maxlength="50"
+              placeholder="Write a comment...."
+            />
+          </li>
+        </ul>
+        <p class="alert"></p>
+
+        <button type="button" class="btn addTask-btn">post</button>
+        <button type="button" class="btn editTask-btn">Update comment</button>
+      </div>
+    </section>
+
+    <section class="home-page section" id="tasks">
+      <div class="home-page-container container">
+        <h1>comments</h1>
+
+        <div class="tasks"></div>
+      </div>
+    </section>
+    <section class="model-section">
+      <div class="model-container">
+        <p>Delete Task</p>
+        <div class="model-btns">
+          <button class="btn confirm-btn">Confirm</button>
+          <button class="btn cancel-btn">Cancel</button>
+        </div>
+      </div>
+    </section>
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
